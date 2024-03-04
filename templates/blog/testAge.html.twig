@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+Age : {{age}}
+
+{# Enfant : de 2 ans à 10-12 ans. Adolescent : de 10-12 ans à 18 ans environ. Adulte : de 18 ans à 70 ans. Personne âgée : à partir de 70 ans. #}
+
+{% if age <= 15  %}
+
+<h3> Vous êtes Enfant  </h3>
+
+{% elseif age <=20 %}
+<h3> Vous êtes Adolescent  </h3>
+
+{% else %}
+<h3> Vous êtes Adulte  </h3>
+{% endif %}
+
+
+{% endblock %}
